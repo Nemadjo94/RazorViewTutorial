@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<html>
+    <head>
+        <title>View</title>
+    </head>
+    <body>
+        <h1>Index</h1>
+
+        @{
+            int b = 5;
+            for (int i = 0; i < 5; i++)
+            {
+                <li>@(i + 1)</li>
+            }
+
+            if (b < 10)
+            {
+                <p>B is less than 10</p>
+            }
+            else
+            {
+                <p>B is greater than 10</p>
+            }
+        }
+        <p>Value: @b</p>
+
+        <a href="Home/Index2">Employees list</a>
+        <br />
+        <a href="Home/Index3">Index 3</a>
+        <br />
+        <a href="Home/ValidateAge">Validate Age</a>
+        <br />
+        <a href="Home/AboutUs">About Us</a>
+    </body>
+</html>
